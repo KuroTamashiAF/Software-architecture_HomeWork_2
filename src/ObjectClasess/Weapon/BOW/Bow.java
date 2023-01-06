@@ -1,6 +1,8 @@
-package ObjectClasess.Weapon;
+package ObjectClasess.Weapon.BOW;
 
-public class Bow extends Weapon{
+import ObjectClasess.Weapon.Weapon;
+
+public class Bow extends Weapon {
     private int damage = 10;
 
     public Bow(String name) {
