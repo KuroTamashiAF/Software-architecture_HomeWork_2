@@ -5,13 +5,11 @@ import ObjectClasess.Weapon.Weapon;
 public class Warrior {
     protected Armor armor;
     protected Weapon weapon;
-    protected int HP;
     protected String name;
 
-    public Warrior(Armor armor, Weapon weapon, int HP, String name) {
+    public Warrior(Armor armor, Weapon weapon, String name) {
         this.armor = armor;
         this.weapon = weapon;
-        this.HP = HP;
         this.name = name;
     }
 
@@ -29,10 +27,6 @@ public class Warrior {
 
     public Weapon getWeapon() {
         return weapon;
-    }
-
-    public int getHP() {
-        return HP;
     }
 
     public String getName() {
