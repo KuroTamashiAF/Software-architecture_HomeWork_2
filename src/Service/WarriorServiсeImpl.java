@@ -6,9 +6,6 @@ import ObjectClasess.Warrior.Knight;
 
 public class WarriorServiсeImpl implements  WarriorService{
 
-
-
-
     @Override
     public void fight(Archer war1 , Knight war2) {
         boolean Alive =  true;
