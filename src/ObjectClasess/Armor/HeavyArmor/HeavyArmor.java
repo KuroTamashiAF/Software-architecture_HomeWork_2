@@ -1,4 +1,4 @@
-package ObjectClasess.Armor.LightArmor;
+package ObjectClasess.Armor.HeavyArmor;
 
 import ObjectClasess.Armor.Armor;
 
