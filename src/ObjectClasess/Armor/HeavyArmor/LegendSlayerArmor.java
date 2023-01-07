@@ -1,8 +1,8 @@
 package ObjectClasess.Armor.HeavyArmor;
 
-public class DragonFireArmor extends HeavyArmor{
-    private double resistance  =  0.61;
-    public DragonFireArmor(String name) {
+public class LegendSlayerArmor extends HeavyArmor{
+    private double resistance  = 0.53;
+    public LegendSlayerArmor(String name) {
         super(name);
     }
 
