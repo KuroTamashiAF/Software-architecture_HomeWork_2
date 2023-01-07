@@ -8,4 +8,12 @@ public class Knight extends Warrior{
     public Knight(Armor armor, Weapon weapon, String name) {
         super(armor, weapon, name);
     }
+
+    public int getHP() {
+        return HP;
+    }
+
+    public void setHP(int HP) {
+        this.HP = HP;
+    }
 }

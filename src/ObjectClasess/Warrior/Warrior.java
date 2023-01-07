@@ -32,4 +32,5 @@ public class Warrior {
     public String getName() {
         return name;
     }
+
 }

@@ -12,4 +12,8 @@ public class Archer extends Warrior{
     public int getHP() {
         return HP;
     }
+
+    public void setHP(int HP) {
+        this.HP = HP;
+    }
 }

@@ -1,9 +1,9 @@
 package ObjectClasess.Weapon.BOW;
 
-public class SniperNow extends Bow{
+public class SniperBow extends Bow{
     private int damage = 25;
 
-    public SniperNow(String name) {
+    public SniperBow(String name) {
         super(name);
     }
 
