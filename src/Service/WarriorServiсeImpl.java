@@ -37,8 +37,5 @@ public class WarriorServiсeImpl implements  WarriorService{
             }
 
         }while (Alive);
-
     }
-
-
 }
