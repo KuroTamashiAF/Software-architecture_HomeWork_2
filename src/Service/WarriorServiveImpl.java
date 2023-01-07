@@ -21,22 +21,26 @@ public class WarriorServiveImpl implements  WarriorService{
 
     @Override
     public void fight(Archer war1 , Knight war2) {
-        System.out.printf(" %d HP первого бойца ", war1.getHP());
-        System.out.printf(" %d HP второго бойца ", war2.getHP());
 
+        System.out.printf(" %d HP %s \n ", war1.getHP(),war1.getName() );
+        System.out.printf(" %d HP %s \n ", war2.getHP(),war2.getName() );
+        System.out.printf(" %s атакует %s \n", war1.getName(),war2.getName());
+        war2.setHP(war2.getHP() - war1.getWeapon().getDamage());
+        System.out.printf(" %s атакует %s \n", war2.getName(),war1.getName());
+        war1.setHP(war1.getHP() - war2.getWeapon().getDamage());
 
 
     }
 
     public static void main(String[] args) {
-        Armor LA1 = new LeatherArmor("LeatherArmor");
-        Armor LA2 = new GlassArmor("GlassArmor");
-        Armor HA1 = new DragonFireArmor("DragonFireArmor");
-        Armor HA2 = new LegendSlayerArmor("LegendSlayerArmor");
-        Weapon bow1 = new HuntBow("HuntBow");
-        Weapon bow2 = new SniperBow("SniperBow");
-        Weapon SW1 = new BlackRitual("BlackRitual");
-        Weapon SW2 = new Katana("Katana");
+        LeatherArmor LA1 = new LeatherArmor("LeatherArmor");
+        GlassArmor LA2 = new GlassArmor("GlassArmor");
+        DragonFireArmor HA1 = new DragonFireArmor("DragonFireArmor");
+        LegendSlayerArmor HA2 = new LegendSlayerArmor("LegendSlayerArmor");
+        HuntBow bow1 = new HuntBow("HuntBow");
+        SniperBow bow2 = new SniperBow("SniperBow");
+        BlackRitual SW1 = new BlackRitual("BlackRitual");
+        Katana SW2 = new Katana("Katana");
         Archer archer  = new Archer(LA1, bow1, "Alex");
         Knight knight  = new Knight(HA1,SW1, "Otr" );
         WarriorService rrr = new WarriorServiveImpl();

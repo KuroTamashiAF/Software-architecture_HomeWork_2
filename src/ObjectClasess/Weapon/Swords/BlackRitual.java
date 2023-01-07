@@ -6,7 +6,7 @@ public class BlackRitual extends  Sword{
         super(name);
     }
 
-    @Override
+
     public int getDamage() {
         return damage;
     }
